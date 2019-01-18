@@ -91,7 +91,7 @@ static void socket_addr_is_multicast_test(void)
 	assert(0 == socket_addr_is_multicast((struct sockaddr*)&in6, sizeof(in6)));
 }
 
-void socket_opt_dontfrag_test(void);
+//void socket_opt_dontfrag_test(void);
 
 void socket_test(void)
 {
@@ -103,7 +103,7 @@ void socket_test(void)
 	socket_addr_is_multicast_test();
     
 #if !defined(OS_MAC)
-    socket_opt_dontfrag_test();
+    //socket_opt_dontfrag_test();
 #endif
     
 	socket_cleanup();
